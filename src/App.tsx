@@ -7,9 +7,16 @@ function App() {
   const converter = new Converter();
 
   const onCopy = async () => {
-    setShowNotify(true);
+    setShowNotify(false);
 
     const clipboardContents = await navigator.clipboard.readText();
+
+    if (!clipboardContents.includes('**')) {
+      return;
+    }
+
+    setShowNotify(true);
+
     const convertedHTML = converter.makeHtml(clipboardContents);
     const formattedHTML = convertedHTML.replace(
       '<p><strong>Examples:</strong></p>',
