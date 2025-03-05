@@ -1,0 +1,11 @@
+* TODO Roadmap [3/7] [42%]
+** DONE Fix styles
+CLOSED: [2025-03-05 Wed 10:34] DEADLINE: <2025-03-05 Wed 10:30>
+** DONE Add tittle
+CLOSED: [2025-03-05 Wed 10:34]
+** DONE Remove annoying jumps in the UI
+CLOSED: [2025-03-05 Wed 10:35]
+** TODO Change to use Tailwind
+** TODO Change UI
+** TODO Improve UX
+** TODO Add a better theme
