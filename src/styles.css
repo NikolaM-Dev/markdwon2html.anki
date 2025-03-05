@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -21,4 +25,8 @@ button {
   color: white;
   font-weight: bold;
   display: block;
+}
+
+#target {
+  display: none;
 }
