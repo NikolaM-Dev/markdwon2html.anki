@@ -36,8 +36,18 @@ function App() {
   return (
     <main>
       <div id="target"></div>
-      <button onClick={onCopy}>Copy</button>
-      {showNotify ? <p>✅ Copied...</p> : null}
+      <section>
+        <h1>
+          Markdown2HTML{' '}
+          {showNotify ? (
+            <span>Copied</span>
+          ) : (
+            <span className="hidde">Copied</span>
+          )}
+        </h1>
+        <button onClick={onCopy}>Paste and Copy 📋</button>
+      </section>
+      <section></section>
     </main>
   );
 }
