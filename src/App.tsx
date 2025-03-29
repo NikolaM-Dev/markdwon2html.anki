@@ -18,10 +18,10 @@ function App() {
     setShowNotify(true);
 
     const convertedHTML = converter.makeHtml(clipboardContents);
-    const formattedHTML = convertedHTML.replace(
-      '<p><strong>Examples:</strong></p>',
-      '<br>\n<p><strong>Examples:</strong></p>'
-    );
+    const desiredFormat = '<br>\n<p><strong>Examples:</strong></p>';
+    const formattedHTML = convertedHTML
+      .replace('<p><strong>Examples</strong>:</p>', desiredFormat)
+      .replace('<p><strong>Examples:</strong></p>', desiredFormat);
 
     await navigator.clipboard.writeText(formattedHTML);
 
